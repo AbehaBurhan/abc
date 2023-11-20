@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Processor</title>
+</head>
+<body>
+
+
+    <script>
+    function formatName(fullName) {
+
+  var nameArray = fullName.split(" ");
+
+  var firstName = nameArray[0];
+
+  var secondNameInitial = nameArray.length > 1 ? nameArray[1].charAt(0).toUpperCase() : "";
+
+  var formattedName = firstName + " " + secondNameInitial;
+
+  return formattedName;
+}
+
+var fullName = "John doe";
+var formattedName = formatName(fullName);
+console.log(formattedName);
+</script>
+
+</body>
+</html>
